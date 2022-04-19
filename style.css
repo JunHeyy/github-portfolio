@@ -3,6 +3,7 @@
   --text-colour: #666;
 }
 
+
 body {
   background-color: #fff;
   font-family: 'Source Sans Pro', sans-serif;
@@ -10,6 +11,13 @@ body {
 
 footer, header {
   box-shadow: rgba(100, 100, 111, 0.3) 0px 2px 29px 0px;
+}
+
+header {
+  position: fixed;
+  z-index: 1024;
+  top: 0;
+  left: 0;
 }
 
 main {
@@ -54,12 +62,6 @@ a {
   padding: 0px;
   border: 0.5em solid transparent;
   background: var(--accent-color);
-}
-
-.icon {
-  height: 50px;
-  width: auto;
-  margin-right: 2em;
 }
 
 .figure-img {
@@ -125,11 +127,8 @@ a {
 }
 
 :root * {
-  /* Pause the animation */
   animation-play-state: paused;
-  /* Bind the animation to scroll */
   animation-delay: calc(var(--scroll) * -1s);
-  /* These last 2 properites clean up overshoot weirdness */
   animation-iteration-count: 1;
   animation-fill-mode: both;
 }

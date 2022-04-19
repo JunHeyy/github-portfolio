@@ -66,6 +66,7 @@ a {
 
 .figure-img {
   border: 1px solid black;
+  width: 100%;
 }
 
 .text-justify {

@@ -37,6 +37,7 @@
               <a class="nav-link" href="#About">About</a>
               <a class="nav-link" href="#Projects">Projects</a>
               <a class="nav-link" href="#Experiences">Experiences</a>
+              <a class="nav-link" href="#Achievements">Achievements</a>
               <a class="nav-link" href="#Contact">Contact</a>
             </div>
           </div>
@@ -50,22 +51,33 @@
 
       <!-- Cover Section-->
       <section id="About" class="container-fluid row vh-100 align-content-center justify-content-center p-0 m-0">
-        <img src="./images/fred.jpg" alt="img" class="col-6 col-lg-3 profile-image">
-        <div class="col-12 col-lg-9 align-middle text-center text-lg-start text-justify ps-0 ps-lg-5 pt-5">
+        <img src="./images/fred.jpg" alt="img" class="col-6 col-lg-3 profile-image order-0">
+        <div class="col-12 col-lg-6 align-middle text-center text-lg-start text-justify ps-0 ps-lg-5 pt-5 order-2">
           <h1>Hi I'm Frederick Pek</h1>
-          <h4>I am a graduate Mechanical Engineer minoring in Computer Science from NUS.
+          <h4>I'm a graduate Mechanical Engineer minoring in Computer Science from NUS.
             My interests lie in algorithmic problem solving and creative design.
           </h4>
+        </div>
+        <!-- Model -->
+        <div class="col-6 col-lg-3 order-0 order-lg-3">
+            <model-viewer id="rubiks" src="./assets/rubiks_cube_speed_solving/scene.gltf"
+              camera-controls
+              auto-rotate
+              autoplay
+              interaction-prompt="none"
+              rotation-per-second="45deg"
+              camera-orbit="45deg 55deg 110%">
+              <div slot="progress-bar"></div>
+            </model-viewer>
         </div>
       </section>
 
       <!-- Projects -->
-      <section id="Projects" class="pt-5">
+      <section id="Projects" class="pt-5 reveal">
         <h1 class="container-fluid my-4 p-0">
           <i class="bi bi-box mx-2"></i>Projects
         </h1>
-        <!-- Project Entry 1 -->
-        <div class="row text-start ms-0 pb-4">
+        <div class="row text-start ms-0 pb-4 reveal">
           <div class="d-block d-lg-none col-12">
             <h3>Pedegogical Simulations of Graph Algorithms (2021 - 2022)</h3>
             <h3>Software Developer</h3>
@@ -73,14 +85,11 @@
           <div class="d-none d-lg-block col-6">
             <h3>Pedegogical Simulations of Graph Algorithms (2021 - 2022)</h3>
             <h3>Software Developer</h3>
-            <!-- Description -->
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              consequat.
             </p>
             <p>
               Try it out here: <a href="https://frederickpek.github.io/me4101a/">Graph Algorithms Visualisation Tool</a>
@@ -95,9 +104,7 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              consequat.
             </p>
             <p>
               Try it out here: <a href="https://frederickpek.github.io/me4101a/">Graph Algorithms Visualisation Tool</a>
@@ -106,7 +113,7 @@
         </div>
 
         <!-- Project Entry 2 -->
-        <div class="row text-start ms-0 pb-4">
+        <div class="row text-start ms-0 pb-4 reveal">
           <div class="d-block d-lg-none col-12">
             <h3>Project 2 (Period)</h3>
             <h3>Generic Role</h3>
@@ -114,14 +121,11 @@
           <div class="d-none d-lg-block col-6">
             <h3>Project 2 (Period)</h3>
             <h3>Generic Role</h3>
-            <!-- Description -->
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              consequat.
             </p>
             <p>
               Try it out here: <a href="https://frederickpek.github.io/me4101a/">Dummy Link</a>
@@ -136,9 +140,7 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              consequat.
             </p>
             <p>
               Try it out here: <a href="https://frederickpek.github.io/me4101a/">Dummy Link</a>
@@ -147,7 +149,7 @@
         </div>
 
         <!-- Project Entry 3 -->
-        <div class="row text-start ms-0 pb-4">
+        <div class="row text-start ms-0 pb-4 reveal">
           <div class="d-block d-lg-none col-12">
             <h3>Project 3 (Period)</h3>
             <h3>Generic Role</h3>
@@ -155,14 +157,11 @@
           <div class="d-none d-lg-block col-6">
             <h3>Project 3 (Period)</h3>
             <h3>Generic Role</h3>
-            <!-- Description -->
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              consequat.
             </p>
             <p>
               Try it out here: <a href="https://frederickpek.github.io/me4101a/">Dummy Link</a>
@@ -207,9 +206,7 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              consequat.
             </p>
             <p>
               Try it out here: <a href="https://frederickpek.github.io/me4101a/">Dummy Link</a>
@@ -219,12 +216,12 @@
       </section>
 
       <!-- Experiences -->
-      <section id="Experiences" class="pt-5">
+      <section id="Experiences" class="pt-5 reveal">
         <h1 class="container-fluid my-4 p-0">
           <i class="bi bi-box mx-2"></i>Experiences
         </h1>
         <!-- Experience Entry 1 -->
-        <div class="row text-start ms-0 pb-4">
+        <div class="row text-start ms-0 pb-4 reveal">
           <div class="d-block d-lg-none col-12">
             <h3>Experiece 1 (Period)</h3>
             <h3>Generic Role</h3>
@@ -232,14 +229,11 @@
           <div class="d-none d-lg-block col-6">
             <h3>Experiece 1 (Period)</h3>
             <h3>Generic Role</h3>
-            <!-- Description -->
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              consequat.
             </p>
             <p>
               Try it out here: <a href="https://frederickpek.github.io/me4101a/">Dummy link</a>
@@ -254,10 +248,7 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+              consequat.
             <p>
               Try it out here: <a href="https://frederickpek.github.io/me4101a/">Dummy link</a>
             </p>
@@ -265,7 +256,7 @@
         </div>
 
         <!-- Experience Entry 2 -->
-        <div class="row text-start ms-0 pb-4">
+        <div class="row text-start ms-0 pb-4 reveal">
           <div class="d-block d-lg-none col-12">
             <h3>Experiece 2 (Period)</h3>
             <h3>Generic Role</h3>
@@ -273,14 +264,11 @@
           <div class="d-none d-lg-block col-6">
             <h3>Experiece 2 (Period)</h3>
             <h3>Generic Role</h3>
-            <!-- Description -->
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              consequat.
             </p>
             <p>
               Try it out here: <a href="https://frederickpek.github.io/me4101a/">Dummy link</a>
@@ -295,9 +283,7 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              consequat.
             </p>
             <p>
               Try it out here: <a href="https://frederickpek.github.io/me4101a/">Dummy link</a>
@@ -306,8 +292,82 @@
         </div>
       </section>
 
+      <!-- Achievements -->
+      <section id="Achievements" class="pt-5 reveal">
+        <h1 class="container-fluid my-4 p-0">
+          <i class="bi bi-box mx-2"></i>Achievements
+        </h1>
+        <!-- Achievement Entry 1 -->
+        <div class="row text-start ms-0 pb-4 reveal">
+          <div class="d-block d-lg-none col-12">
+            <h3>Achievement 1 (Period)</h3>
+          </div>
+          <div class="d-none d-lg-block col-6">
+            <h3>Achievement 1 (Period)</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </p>
+            <p>
+              See credential here: <a href="https://frederickpek.github.io/me4101a/">Dummy link</a>
+            </p>
+          </div>
+          <figure class="container-fluid figure col-10 col-lg-5 p-0">
+            <img class="figure-img img-fluid" src="./images/achievement1.png" alt="img">
+            <figcaption class="figure-caption text-center">Screenshot of product webpage.</figcaption>
+          </figure>
+          <div class="d-block d-lg-none col-12">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </p>
+            <p>
+              See credential here: <a href="https://frederickpek.github.io/me4101a/">Dummy link</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Achievement Entry 2 -->
+        <div class="row text-start ms-0 pb-4 reveal">
+          <div class="d-block d-lg-none col-12">
+            <h3>Achievement 2 (Period)</h3>
+          </div>
+          <div class="d-none d-lg-block col-6">
+            <h3>Achievement 2 (Period)</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </p>
+            <p>
+              See credential here: <a href="https://frederickpek.github.io/me4101a/">Dummy link</a>
+            </p>
+          </div>
+          <figure class="container-fluid figure col-10 col-lg-5 p-0">
+            <img class="figure-img img-fluid" src="./images/achievement2.png" alt="img">
+            <figcaption class="figure-caption text-center">Screenshot of product webpage.</figcaption>
+          </figure>
+          <div class="d-block d-lg-none col-12">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </p>
+            <p>
+              See credential here: <a href="https://frederickpek.github.io/me4101a/">Dummy link</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
       <!-- Contact -->
-      <section id="Contact" class="pt-5">
+      <section id="Contact" class="pt-5 reveal">
         <h1>
           <i class="bi bi-telephone px-2"></i>Let's Get In Touch
         </h1>
@@ -345,6 +405,7 @@
         </div>
     </footer>
 
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./scripts/script.js"></script>
     <script src="./lib/particles.min.js"></script>

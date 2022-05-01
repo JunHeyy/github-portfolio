@@ -3,7 +3,6 @@
   --text-colour: #666;
 }
 
-
 body {
   background-color: #fff;
   font-family: 'Source Sans Pro', sans-serif;
@@ -18,6 +17,10 @@ header {
   z-index: 1024;
   top: 0;
   left: 0;
+}
+
+.container-fluid {
+  padding: 0px 0px;
 }
 
 main {

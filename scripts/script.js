@@ -10,7 +10,7 @@ rubiks.addEventListener('load', () => {
 });
 
 /* reveal on scroll */
-window.addEventListener('scroll', ()=> {
+let reveal = () => {
 	let reveals = document.querySelectorAll('.reveal');
 	for (e of reveals) {
 		let windowHeight = window.innerHeight;
@@ -20,4 +20,8 @@ window.addEventListener('scroll', ()=> {
 			e.classList.add("show");
 		}
 	}
-});
+};
+
+window.addEventListener('scroll', reveal);
+
+reveal();
